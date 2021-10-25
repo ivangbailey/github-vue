@@ -1,12 +1,17 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    'cypress/globals': true
   },
+  'plugins': [
+    'cypress'
+  ],
   'extends': [
     'plugin:vue/essential',
     'eslint:recommended',
-    '@vue/typescript/recommended'
+    '@vue/typescript/recommended',
+    'plugin:cypress/recommended'
   ],
   parserOptions: {
     ecmaVersion: 2020
